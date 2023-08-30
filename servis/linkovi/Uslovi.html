@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+body {
+	background-image: url();
+}
+.style1 {color: #006699}
+.style3 {color: #006699; font-weight: bold; }
+-->
+</style>
+<script type="text/javascript">
+<!--
+function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!="") {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+    } if (errors) alert('The following error(s) occurred:\n'+errors);
+    document.MM_returnValue = (errors == '');
+} }
+//-->
+</script>
+</head>
+
+<body>
+<h1 class="style1">Servisni zahtev</h1>
+<p>Postoje tri načina da podnesete svoj zahtev za servis:</p>
+<ol>
+  <li>Online servisni zahtev
+    <ul>
+        <li>Podrazumeva da popunite i odštampate zahtev za servis koji ćete nam   dostaviti prilikom predaje ili slanja Vašeg uređaja. Potvrdu o prijemu   dobijate na email, čim uređaj fizički stigne u servis. Ova prijava   ubrzava procedure prijema čak i ako donosite uređaj lično, pošto   zaobilazite čekanje da Vam se napravi prijemni list i bukvalno možete   samo ostaviti uređaj u servisu i dobiti potvrdu o prijemu na mail.</li>
+    </ul>
+  </li>
+  <li>Dolaskom u naš servisni centar</li>
+  <li>Pozivom na broj našeg servisnog centra
+    <ul>
+        <li>061 / 577 70 67</li>
+    </ul>
+  </li>
+</ol>
+<h2 class="style1">Online obrazac servisnog zahteva</h2>
+<p>Molim vas popunite servisni zahtev ispod.<br />
+  Nakon što nam pošaljete potrebne podatke, servisni inženjer će vas kontaktirati u najkraćem mogućem roku.</p>
+<form id="form1" name="form1" method="post" action="">
+  <table width="745" height="625" border="0" cellpadding="5" cellspacing="0">
+    <tr>
+      <td width="327" align="right"><span class="style3">Ime i prezime</span></td>
+      <td width="9">&nbsp;</td>
+      <td width="379"><label>
+        <input name="ime" type="text" id="ime" onblur="MM_validateForm('ime','','R');return document.MM_returnValue" value="Unesite ime i prezime" size="60" maxlength="60" />
+      </label></td>
+    </tr>
+    <tr>
+      <td align="right"><span class="style3">Adresa</span></td>
+      <td>&nbsp;</td>
+      <td><label>
+        <input name="adresa" type="text" id="adresa" onblur="MM_validateForm('adresa','','R');return document.MM_returnValue" value="Unesite Adresu" size="60" maxlength="60" />
+      </label></td>
+    </tr>
+    <tr>
+      <td align="right"><span class="style3">Email</span></td>
+      <td>&nbsp;</td>
+      <td><label>
+        <input name="email" type="text" id="email" onblur="MM_validateForm('ime','','RisEmail');return document.MM_returnValue" value="Unesite email" size="60" maxlength="60" />
+      </label></td>
+    </tr>
+    <tr>
+      <td align="right"><span class="style3">Kontakt telefon</span></td>
+      <td>&nbsp;</td>
+      <td><label>
+        <input name="telefon" type="text" id="telefon" onblur="MM_validateForm('telefon','','NisNum');return document.MM_returnValue" value="Unesite broj telefona" size="60" maxlength="60" />
+      </label></td>
+    </tr>
+    <tr>
+      <td height="82" align="right"><span class="style3">Proizvodjac</span></td>
+      <td>&nbsp;</td>
+      <td><p>
+        <label>
+        <span class="style3">
+<input type="radio" name="Proizvodjac" value="Apple" id="Proizvodjac_0" />          
+Apple</span></label>
+        <span class="style3"><br />
+        <label>
+          <input type="radio" name="Proizvodjac" value="Acer" id="Proizvodjac_1" />
+          Acer</label>
+        <br />
+        <label>
+          <input type="radio" name="Proizvodjac" value="Asus" id="Proizvodjac_2" />
+          Asus</label>
+        </span><br />
+      </p></td>
+    </tr>
+    <tr>
+      <td align="right"><span class="style3">Model </span></td>
+      <td>&nbsp;</td>
+      <td><label>
+        <input name="model" type="text" id="model" value="Unesite model" size="60" maxlength="60" />
+      </label></td>
+    </tr>
+    <tr>
+      <td align="right"><span class="style3">Serijski broj</span></td>
+      <td>&nbsp;</td>
+      <td><label>
+        <input name="serijski broj" type="text" id="serijski broj" value="Unesite serijski broj" size="60" maxlength="60" />
+      </label></td>
+    </tr>
+    <tr>
+      <td height="79" colspan="3" align="center" valign="middle"><p class="style3">Opis kvara</p>
+        <p>&nbsp;          </p>
+        <label>
+        <textarea name="Opis kvara" id="Opis kvara" cols="80" rows="10">Unesite opis kvara
+</textarea>
+        <br />
+        <br />
+        <span class="style3">Dodatna Oprema:</span></label></td>
+    </tr>
+    
+    <tr>
+      <td height="70" align="right" valign="top"><p class="style3">Punjac<br />
+      Baterija<br />
+      HDD</p>      </td>
+      <td height="70" valign="top">&nbsp;</td>
+      <td height="70" valign="top"><label></label><label></label>
+      <label>
+      <input type="checkbox" name="checkbox" id="checkbox" />
+      <br />
+      <input type="checkbox" name="checkbox2" id="checkbox2" />
+      <br />
+      <input type="checkbox" name="checkbox3" id="checkbox3" />
+      <br />
+      </label></td>
+    </tr>
+    
+    <tr>
+      <td align="right"><label>
+        <input type="reset" name="Reset" id="button" value="Reset" />
+      </label></td>
+      <td>&nbsp;</td>
+      <td><label>
+        <input name="slanje" type="submit" id="slanje" onclick="MM_validateForm('ime','','R','adresa','','R','email','','RisEmail','telefon','','RisNum','model','','R','serijski broj','','R','Opis kvara','','R');return document.MM_returnValue" value="Posalji" />
+      </label></td>
+    </tr>
+  </table>
+</form>
+<p>&nbsp;</p>
+</body>
+</html>
